@@ -5,10 +5,9 @@ Quectel UniKnect MicroPython，是一套集成了4G蜂窝网络通信能力的�
 ## 套件构成
 - **`硬件平台：`** 以STM32F413高性能MCU为核心，板载移远4G Cat.1蜂窝通信模组、光敏/温湿度/G-Sensor等传感器、以及Arduino UNO标准接口，提供稳定、易扩展的硬件基础。
   
-- **`软件平台：`** 基于MicroPython深度定制与移植，提供了完整的4G网络驱动、Socket接口、HTTP/FTP/MQTT等高层协议支持，将复杂的网络编程简化为直观的Python API调用。
+- **`软件平台：`** 基于MicroPython深度定制与移植，提供了完整的4G网络驱动、Socket接口、TCP/UDP/HTTP/FTP/MQTT等上层协议支持，将复杂的网络编程简化为直观的Python API调用。
 
-- **`开发体验：`** 开发者能够快速上手，通过提供预编译的固件、详细的硬件连接指南、丰富的示例脚本以及简洁的开发工具链，帮助参赛团队在最短时间内完成开发环境搭建并跑通第一个网络连接示例，从而将宝贵的时间投入到项目创新与优化中。
-
+- **`开发体验：`** 开发者能够快速上手，通过提供预编译的固件、详细的硬件连接指南、丰富的示例脚本以及简洁的开发工具链，帮助开发者在最短时间内完成开发环境搭建并跑通第一个网络连接示例，从而将宝贵的时间投入到项目创新与优化中。
 
 <br>
 <div align="left">
@@ -46,8 +45,7 @@ UniKnect Gen1-PRO扩展板（**`OC: QADP-EC200UCNAA-Ardunio-EVB`**），是移�
 <br>
 
 ## NUCLEO-F413ZH开发板
-NUCLEO-F413ZH开发板的核心角色是运行MicroPython系统及用户程序、并通过Arduino UNO接口与UniKnect Gen1-PRO扩展板连接，从而驱动4G模组实现物联网功能。
-其具体描述、与UniKnect Gen1-PRO扩展板的垂直堆叠插接方法，可参考 [Quectel_UniKnect_MicroPython_快速开发指导](./docs)
+NUCLEO-F413ZH开发板的核心角色是运行MicroPython系统及用户程序、并通过Arduino UNO接口与UniKnect Gen1-PRO扩展板连接，从而驱动4G模组实现物联网功能。其具体描述、与UniKnect Gen1-PRO扩展板的垂直堆叠插接方法，可参考 [Quectel_UniKnect_MicroPython_快速开发指导](./docs)
 
 <div align="left">
   <img src="docs/figures/HW_Assembly.png" alt="HW_Assembly" height=500>
