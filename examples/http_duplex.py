@@ -53,7 +53,7 @@ def main():
         
         if get_response.status_code == 200:
             content = get_response.text
-            print(f"响应内容 ({len(content)} 字节)")
+            print(f"响应内容 (get_response.text} 字节)")
         else:
             print(f"❌ GET请求失败")
             

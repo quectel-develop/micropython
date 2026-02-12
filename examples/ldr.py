@@ -6,10 +6,6 @@ ldr = ADC(Pin('C5'))  # 对应您的 ADC_CHANNEL_15, PC5
 
 # 正确的方法：使用 read_u16()
 def get_adc():
-    """
-    正确的ADC读取函数
-    对应您C代码的 Get_Adc()
-    """
     return ldr.read_u16()  # 返回 0-65535
 
 # 转换为12位（STM32是12位ADC）

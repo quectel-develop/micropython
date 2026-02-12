@@ -2,10 +2,8 @@
 import machine
 import time
 from ahtx0 import AHT20
-
 # 1. 初始化I2C总线
 i2c = machine.I2C(1, freq=400000)  # 使用I2C1
-
 # 2. 扫描I2C设备
 print("I2C设备扫描:")
 devices = i2c.scan()
@@ -17,14 +15,9 @@ else:
     # 停止程序
     import sys
     sys.exit()
-
 # 3. 初始化AHT20传感器
 sensor = AHT20(i2c)
 print("AHT20初始化完成")
-
-# 4. 主循环读取数据
-print("\n开始读取温湿度...")
-print("按Ctrl+C停止\n")
 
 try:
     while True:
