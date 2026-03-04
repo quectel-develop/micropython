@@ -39,7 +39,7 @@ try:
     try:
         client.publish(TOPIC, b'Hello from MQTT client !')
     except Exception as e:
-        print(f'*** Subscribe failed. Err: {e}')
+        print(f'*** Publish failed. Err: {e}')
         
     # 持续监听消息
     while True:
