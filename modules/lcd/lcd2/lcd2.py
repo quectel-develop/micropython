@@ -6,7 +6,7 @@ from images import QQ_ICON_40x40
 
 def main():
     # 1. 初始化SPI
-    spi = machine.SPI(1, baudrate=20000000, polarity=0, phase=0)
+    spi = machine.SPI(1, baudrate=10000000, polarity=0, phase=0)
     
     # 2. 初始化LCD
     lcd = LCD(spi, dc_pin="F12", cs_pin="D14")

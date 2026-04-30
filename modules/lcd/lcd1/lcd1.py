@@ -3,7 +3,7 @@ import time
 import random
 from st7735 import LCD
 # 初始化SPI
-spi = machine.SPI(1, baudrate=20000000, polarity=0, phase=0)
+spi = machine.SPI(1, baudrate=10000000, polarity=0, phase=0)
 lcd = LCD(spi, dc_pin="F12", cs_pin="D14")
 lcd.set_rotation(1)
 # 模拟传感器数据
